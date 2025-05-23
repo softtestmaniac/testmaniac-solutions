@@ -133,7 +133,16 @@
 </head>
 <body>
   <div class="container">
-    <img src="TMS_Logo.svg" alt="Testmaniac Solutions Logo" class="logo" />
+    <!-- Inline SVG Logo -->
+    <svg class="logo" width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TMS Logo">
+      <style>
+        .brace { fill: #4CAF50; font-weight: bold; font-size: 48px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .letters { fill: #666666; font-weight: 700; font-size: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      </style>
+      <text class="brace" x="10" y="60">{</text>
+      <text class="letters" x="50" y="60">TMS</text>
+      <text class="brace" x="140" y="60">}</text>
+    </svg>
 
     <h1>Testmaniac Solutions</h1>
     <p class="lead"><strong>Custom Software starting at ₹1999</strong><br />We build exactly what your business needs</p>
