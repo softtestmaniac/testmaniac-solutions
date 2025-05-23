@@ -2,72 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Testmaniac Solutions</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #212529;
+      line-height: 1.6;
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      background: #fff;
+      margin: 0 auto;
+      padding: 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .container:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
     }
     img.logo {
       max-width: 180px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
+
     h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
+    p.lead {
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 45px;
+    }
+
+    h2.section-title {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
       color: #0d6efd;
-      margin-top: 0;
+      letter-spacing: 0.04em;
+      position: relative;
+      display: inline-block;
     }
-    p {
-      font-size: 18px;
+    h2.section-title::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 60px;
+      background: #0d6efd;
+      margin: 8px auto 0 auto;
+      border-radius: 3px;
     }
+
     ul.services {
+      list-style: none;
+      padding-left: 0;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
       text-align: left;
-      margin: 20px auto;
-      max-width: 500px;
     }
     ul.services li {
-      margin-bottom: 10px;
-      font-size: 16px;
+      background: #e7f1ff;
+      margin-bottom: 12px;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #0d3c91;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      cursor: default;
     }
+    ul.services li:hover {
+      background-color: #d0e4ff;
+    }
+    ul.services li::before {
+      content: "✔";
+      color: #0d6efd;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
     iframe {
       width: 100%;
       height: 800px;
-      border: none;
-      margin-top: 30px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      box-shadow: 0 6px 20px rgba(13, 110, 253, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+    iframe:hover {
+      box-shadow: 0 8px 28px rgba(13, 110, 253, 0.25);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2.section-title {
+        font-size: 1.5rem;
+      }
+      ul.services {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Logo placeholder (replace src later) -->
-    <img src="logo-placeholder.png" class="logo" alt="Testmaniac Solutions Logo" />
+    <img src="logo-placeholder.png" alt="Testmaniac Solutions Logo" class="logo" />
 
     <h1>Testmaniac Solutions</h1>
-    <p><strong>Custom Software starting at ₹1999</strong><br>We build exactly what your business needs</p>
+    <p class="lead"><strong>Custom Software starting at ₹1999</strong><br />We build exactly what your business needs</p>
 
-    <h2 style="margin-top: 40px;">💼 Services We Offer</h2>
-   <ul class="services">
-  <li>✔ Inventory & Stock Management for Shops and Warehouses</li>
-  <li>✔ Appointment Scheduling Systems for Clinics and Service Providers</li>
-  <li>✔ Student Enrollment and Fee Tracking for Educational Institutions</li>
-  <li>✔ Data Import & Cleanup Tools for Business and Finance Departments</li>
-  <li>✔ Analytics Dashboards for Sales, HR, and Admin Reporting</li>
+    <h2 class="section-title">💼 Services We Offer</h2>
+    <ul class="services">
+      <li>Inventory & Stock Management for Shops and Warehouses</li>
+      <li>Appointment Scheduling Systems for Clinics and Service Providers</li>
+      <li>Student Enrollment and Fee Tracking for Educational Institutions</li>
+      <li>Data Import & Cleanup Tools for Business and Finance Departments</li>
+      <li>Analytics Dashboards for Sales, HR, and Admin Reporting</li>
     </ul>
 
-
-    <h2 style="margin-top: 50px;">📝 Submit Your Requirements</h2>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdf_rv0QjTy9Wk4E9EvYCa9ZWBmovA7zSkpmCy1bua9xUG2Bg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <h2 class="section-title">📝 Submit Your Requirements</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdf_rv0QjTy9Wk4E9EvYCa9ZWBmovA7zSkpmCy1bua9xUG2Bg/viewform?embedded=true" loading="lazy"></iframe>
   </div>
 </body>
 </html>
