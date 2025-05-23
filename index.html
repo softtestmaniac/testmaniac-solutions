@@ -10,55 +10,64 @@
       background: #f8f9fa;
       color: #333;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
     }
     .container {
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
       background: white;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    img.logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
     h1 {
       color: #0d6efd;
+      margin-top: 0;
     }
     p {
       font-size: 18px;
     }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 20px;
+    ul.services {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+    ul.services li {
+      margin-bottom: 10px;
       font-size: 16px;
-      background-color: #0d6efd;
-      color: white;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
       border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .qr {
       margin-top: 30px;
-    }
-    .qr img {
-      width: 150px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Testmaniac Solutions</h1>
-    <p><strong>Custom Software starting at ₹1999</strong><br>Tailored to your business needs</p>
-    <a class="btn" href="https://forms.gle/CCtGUQcDEPBHq9rz6" target="_blank">Request Your Software</a>
+    <!-- Logo placeholder (replace src later) -->
+    <img src="logo-placeholder.png" class="logo" alt="Testmaniac Solutions Logo" />
 
-    <!-- QR code section (optional) -->
-    
-    <div class="qr">
-      <p>Or scan to submit your request:</p>
-      <img src="Testmaniac_Solutions_QR_Code.png" alt="QR Code">
-    </div>
-    
+    <h1>Testmaniac Solutions</h1>
+    <p><strong>Custom Software starting at ₹1999</strong><br>We build exactly what your business needs</p>
+
+    <h2 style="margin-top: 40px;">💼 Services We Offer</h2>
+   <ul class="services">
+  <li>✔ Inventory & Stock Management for Shops and Warehouses</li>
+  <li>✔ Appointment Scheduling Systems for Clinics and Service Providers</li>
+  <li>✔ Student Enrollment and Fee Tracking for Educational Institutions</li>
+  <li>✔ Data Import & Cleanup Tools for Business and Finance Departments</li>
+  <li>✔ Analytics Dashboards for Sales, HR, and Admin Reporting</li>
+    </ul>
+
+
+    <h2 style="margin-top: 50px;">📝 Submit Your Requirements</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvPOkXXAObIoyprhxgIQMFCw7VmPtcakJba5kJQ5mNcXnzkQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </div>
 </body>
 </html>
